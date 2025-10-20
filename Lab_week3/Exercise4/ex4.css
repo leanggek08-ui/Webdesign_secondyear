@@ -1,0 +1,10 @@
+th{
+    background-color: rgb(105, 113, 113);
+  border: 3px solid black;
+  padding: 10px;
+}
+table {
+      
+      border-collapse: collapse;
+       width: 30%; 
+    }

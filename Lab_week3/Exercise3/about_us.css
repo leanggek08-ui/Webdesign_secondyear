@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Khmer&family=Mozilla+Headline:wght@200..700&family=Oswald:wght@200..700&family=Playwrite+AU+QLD:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.quarter-bg {
+  height: 30vh; /* 25% of the page height */
+  width: 100%;  /* full width */
+  background-color: #ede8df; /* your color */
+}
+.welcome_about_us{
+  font-size: 30px;
+  font-weight: bold;
+  color:#2f4858;
+  position: relative;
+  top: 30%;
+  left: 15%;
+  text-align: left;
+
+  font-family: "Mozilla Headline", sans-serif;
+
+}
+.detail_about_us{
+  font-size: 18px;
+  font-weight: bold;
+  color:#5e847e;
+  position: relative;
+  top:32%;
+  left: 5%;
+  text-align: left;
+
+}
+.img_about_us{
+ position: absolute;
+  top: 5%;
+  right: 20%;
+  width: 25%;
+  height: auto;
+  border-radius: 10%; /* makes the image round (កោង) */
+  object-fit: cover;  /* keeps the image looking nice inside the curve */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* adds soft shadow*/
+} 
+
+.quarter-bg1 {
+  height: 30vh;
+  width: 100%;
+  background-color:#e7e9e0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:88px;
+}
+.img1_about_us{
+  position:absolute;
+  top:10%;
+  left: 2%;
+  width: 25%;
+  height: auto;
+  border-radius: 10%;
+  object-fit: cover;
+}
+.mission{
+  font-size: 30px;
+  font-weight: bold;
+  color:#2f4858;
+  position: absolute;
+  top: 25%;
+  right: 40%;
+  text-align: right;
+  font-family: "Mozilla Headline", sans-serif;
+
+}
+.detail_mission{
+  font-size: 18px;
+  font-weight: bold;
+  color:#5e847e;
+  position: relative;
+  top:10%;
+  left: 5%;
+  text-align: left;
+}
+.sponser_bg{
+  height: 5vh;
+  width: 100%;
+  background-color:#ffffff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:30px;
+}
+.sponser{
+  font-size: 40px;
+  font-weight: bold;
+  color:#2f4858;
+  position: relative;
+  top:10%;
+  text-align:center;
+}
+
+
+.ptc_sponsor{
+  position: absolute;
+  top: 90%;
+  right: 51%;
+  width: 10%;
+  height: auto;
+  border-radius: 55%; /* makes the image round (កោង) */
+  object-fit: cover;  /* keeps the image looking nice inside the curve */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* adds soft shadow*/
+}
+.cadt_sponser{
+  position: absolute;
+  top: 90%;
+  right: 39%;
+  width: 150px;          /* make same width and height */
+  height: 150px;
+  border-radius: 50%;    /* make it circular */
+  object-fit: cover;     /* keeps image centered inside circle */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* soft shadow */
+}
+footer {
+  background-color: #333;   /* footer background color */
+  color: white;             /* text color */
+  text-align: center;       /* center text */
+  padding: 15px;            /* space inside footer */
+  width: 100%;              /* full width */
+  font-family: Arial, sans-serif;
+  position: relative;       /* keep natural position (no overlap) */
+  margin-top: 220px;         /* add space from last section */
+}
