@@ -1,0 +1,133 @@
+.frame{
+     border: 1px solid rgb(87, 150, 213);     /* thickness + color */
+      padding: 20px;               /* space inside the frame */
+      width: 500px;
+      height: 700px;
+      margin: 50px auto;           /* center horizontally */
+      text-align: center;
+      /* border-radius: 10px;  */
+
+}
+
+.profile{
+    margin-top: 2%;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+#p1{
+    position: relative;
+    margin-top:20%;
+    left: -40%;
+}
+#num1{
+    position: relative;
+    margin-top:-1%;
+    left: -42%;
+    font-size: 30px;
+    color:#adacac;
+}
+
+#p2{
+    position: relative;
+    margin-top:-19.5%;
+    left: -5%;
+}
+#num2{
+    position: relative;
+    margin-top:1%;
+    left: -5%;
+    font-size: 30px;
+    color:#adacac;
+}
+
+#p3{
+    position: relative;
+    margin-top:-20%;
+    left: 32%;
+}
+#num3{
+    position: relative;
+    margin-top:-1%;
+    left: 32%;
+    font-size: 30px;
+    color:#adacac;
+} */
+
+#p4{
+    position:relative;
+    top:10%;
+}
+.insta{
+    position: relative;
+    margin-top: 5%;
+    width: 70px;
+    height: 70px;
+    right: 10%;
+    border-radius: 50%;
+}
+.tele{
+    position: relative;
+    margin-top: 5%;
+    width: 70px;
+    height: 70px;
+    right: 5%;
+    border-radius: 50%;
+}
+.twitter{
+    position: relative;
+    margin-top: 5%;
+    width: 70px;
+    height: 70px;
+    left: 1%;
+    border-radius: 50%;
+}
+.snap{
+     position: relative;
+    margin-top: 5%;
+    width: 70px;
+    height: 70px;
+    left: 5%;
+    border-radius: 50%;
+}
+button{
+    position: relative;
+    background-color: rgb(24, 126, 215);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    top:5%;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+
+}
+
+ button span {
+  display: inline-block;
+ transition: opacity 0.2s ease;
+}
+
+button:hover{
+    background-color: #adacac;
+    color:blue;
+}
+
+
+ button:hover span {
+  opacity: 0;
+}
+button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+button:hover::after {
+  content: "Touch me";
+  opacity: 1;
+} 
