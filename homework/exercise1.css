@@ -1,0 +1,41 @@
+
+ /* Make the whole container take full screen height */
+.container {
+  background-color: pink;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* horizontally center the background */
+}
+
+/* Green background inside container */
+.background {
+  background-color: rgb(149, 207, 42);
+  width: calc(100% - 20em); /* 10em margin on both sides */
+  display: flex;
+  flex-direction: column;
+  /* gap: 1em; space between header, main, footer */
+  /* padding: 1em; optional, adds inner spacing */
+}
+
+/* Each box (header, main, footer) */
+.box {
+  background-color:GRAY;
+  text-align: center;
+  font-size: 1.5em;
+  color: black;
+  border-radius: 0px;
+}
+
+/* Specific heights */
+#box1, #box3 {
+  height: 100px;
+  
+}
+
+
+#box2 {
+   flex-grow: 1;/*fills the space between header and footer */
+   margin-top: 1em; /* gap below header */
+   margin-bottom: 1em; /*gap above footer */ 
+}
+
