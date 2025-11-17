@@ -1,0 +1,97 @@
+/* General styles */
+body {
+  font-family: 'Sono', sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.pricing-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Individual pricing plan card */
+.pricing-plan {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 30px 20px;
+  flex: 1 1 250px; /* flexible width */
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-plan:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Plan title */
+.plan-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Plan price */
+.plan-price {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #0077ff;
+}
+
+/* Features list */
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.plan-features li {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #555;
+}
+
+/* Sign Up button */
+.plan-button {
+  background: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.plan-button:hover {
+  background: #005fcc;
+}
+
+/* Highlight the middle plan */
+.pricing-plan:nth-child(2) {
+  transform: scale(1.05);
+  border: 2px solid #0077ff;
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+  .pricing-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing-plan {
+    max-width: 80%;
+    margin-bottom: 20px;
+  }
+}
