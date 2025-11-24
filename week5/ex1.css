@@ -1,0 +1,59 @@
+.container{
+    background-color: rgb(175, 175, 175);
+    display:grid;
+    height:50vh;
+    width:50vh;
+    grid-template-columns:130px 130px 130px;
+    grid-template-rows:20% 30% 20%;
+    column-gap:10px;
+    row-gap:10px;
+    justify-content:space-around;
+
+}
+.box1{
+   background-color: rgb(31, 102, 218); 
+   box-shadow:0.5rem 0.1rem blue;
+   grid-column:1/4;
+   border-radius:0.3rem;
+}
+.box2{
+   background-color: rgb(31, 102, 218); 
+   grid-column:1/2;
+   grid-row:2/4;
+   border-radius:0.5rem;
+      box-shadow:0.3rem 0.1rem blue;
+
+}
+.box3{
+   background-color: rgb(31, 102, 218); 
+    grid-column:2/3;
+   grid-row:2/3;
+   border-radius:0.5rem;
+      box-shadow:0.3rem 0.1rem blue;
+
+}
+
+.box4{
+   background-color: rgb(31, 102, 218);
+     grid-column:3/4;
+   grid-row:2/3;
+   border-radius:0.5rem;
+      box-shadow:0.3rem 0.1rem blue;
+
+}
+.box5{
+   background-color: rgb(31, 102, 218); 
+    grid-column:2/4;
+   grid-row:3/4;
+   border-radius:0.5rem;
+      box-shadow:0.3rem 0.1rem blue;
+
+}
+.box6{
+   background-color: rgb(31, 102, 218); 
+   grid-column:1/4;
+   border-radius:0.5rem;
+      box-shadow:0.3rem 0.1rem blue;
+
+
+}

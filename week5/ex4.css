@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Khmer&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Mozilla+Headline:wght@200..700&family=Oswald:wght@200..700&family=Playwrite+AU+QLD:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Khmer&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Mozilla+Headline:wght@200..700&family=Oswald:wght@200..700&family=Playwrite+AU+QLD:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+background: linear-gradient(to right,#e28b23, rgb(69, 68, 68));
+
+}
+.container{
+    background-color: rgb(0, 0, 0);
+     height: 100vh;
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left:50px;
+    margin-right:50px;
+    display:grid;
+    grid-template-columns:10% 14% 14% 14% 14% 14% 14%;
+    grid-template-rows:10% 15% 15% 15% 15% 15% ;
+    gap:10px 10px;
+}
+.box1{
+    background-color:#231f20;
+    grid-column:1/2;
+    grid-row: 1/9;
+    display:grid;
+    grid-template-rows:20% 10% 10% 10% 10% 10% 20%;
+    row-gap:5px;
+    
+}
+.logo{
+    background-image: url("logo2.png");
+    background-size: cover;         /* fit image */
+    background-position: center;    /* center image */
+    background-repeat: no-repeat;   /* no repeat */
+    width: 100%;                    /* full width of grid cell */
+    height: 100%; 
+}
+.insign{
+    background-image:url("insights.png");
+    background-size: cover;         /* fit image */
+    background-position:left;    /* center image */
+    background-repeat: no-repeat;   /* no repeat */
+    width: 50%;                    /* full width of grid cell */
+    height: 50%; 
+}
+p{
+    margin-left:80px;
+    color:white;
+}
+.product{
+    background-image:url("product.png");
+    background-size: cover;         /* fit image */
+    background-position:left;    /* center image */
+    background-repeat: no-repeat;   /* no repeat */
+    width: 50%;                    /* full width of grid cell */
+    height: 50%; 
+}
+.Audience{
+    background-image:url("audience.png");
+    background-size: cover;         /* fit image */
+    background-position:left;    /* center image */
+    background-repeat: no-repeat;   /* no repeat */
+    width: 50%;                    /* full width of grid cell */
+    height: 50%;
+
+}
+.Orders{
+    background-image:url("Order.png");
+    background-size: cover;         /* fit image */
+    background-position:left;    /* center image */
+    background-repeat: no-repeat;   /* no repeat */
+    width: 50%;                    /* full width of grid cell */
+    height: 50%;
+}
+.Transaction{
+    background-image:url("transection.png");
+    background-size: cover;         /* fit image */
+    background-position:left;    /* center image */
+    background-repeat: no-repeat;   /* no repeat */
+    width: 50%;                    /* full width of grid cell */
+    height: 50%;
+}
+.box2{
+    grid-column: 2/9;
+    grid-row:1/1.2;
+    /* background-color:rgb(156, 145, 145); */
+    font-family: "Mozilla Headline", sans-serif;
+    color:rgb(255, 255, 255);
+    font-size: 40px; /* optional */
+    font-weight: 600; /* optional */
+    text-align: Center;
+
+    
+}
+.box3{
+    grid-column: 2/3;
+    grid-row:2/3;
+    background-color:#231f20;
+    border-radius:0.5rem;
+    display: flex;
+    flex-direction: column;   /* stack vertical */
+    justify-content: center;  /* vertical center */
+    align-items: center;      /* horizontal center */
+    text-align: center;
+}
+.p1, .p2 {
+    margin: 0;            /* remove spacing bias */
+    width: 100%;          /* same width for equal alignment */
+    text-align: center;   /* center text */
+    color: white;
+    font-family: "Mozilla Headline", sans-serif;
+}
+
+.p1 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.p2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 8px;  /* small gap */
+}
+.box4{
+    grid-column: 3/4;
+    grid-row:2/3;
+    background-color:#231f20;
+    border-radius:0.5rem;
+    display: flex;
+    flex-direction: column;   /* stack vertical */
+    justify-content: center;  /* vertical center */
+    align-items: center;      /* horizontal center */
+    text-align: center;
+
+}
+
+.box5{
+    grid-column: 4/5;
+    grid-row:2/3;
+    background-color:#231f20;
+    border-radius:0.5rem;
+    display: flex;
+    flex-direction: column;   /* stack vertical */
+    justify-content: center;  /* vertical center */
+    align-items: center;      /* horizontal center */
+    text-align: center;
+
+}
+
+.box6{
+    grid-column: 5/6;
+    grid-row:2/3;
+    background-color:#231f20;
+    border-radius:0.5rem;
+    display: flex;
+    flex-direction: column;   /* stack vertical */
+    justify-content: center;  /* vertical center */
+    align-items: center;      /* horizontal center */
+    text-align: center;
+
+}
+
+.box7{
+    grid-column: 6/7;
+    grid-row:2/3;
+    background-color:#231f20;
+    border-radius:0.5rem;
+    display: flex;
+    flex-direction: column;   /* stack vertical */
+    justify-content: center;  /* vertical center */
+    align-items: center;      /* horizontal center */
+    text-align: center;
+
+}
+
+.box8{
+    grid-column: 7/8;
+    grid-row:2/3;
+    background-color:#231f20;
+    border-radius:0.5rem;
+    display: flex;
+    flex-direction: column;   /* stack vertical */
+    justify-content: center;  /* vertical center */
+    align-items: center;      /* horizontal center */
+    text-align: center;
+
+}
+.box9{
+    grid-column:2/5;
+    grid-row:3/6;
+    background-color:#231f20;
+    border-radius:0.5rem;
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+.Date{
+    margin: 0;            /* remove spacing bias */
+    width: 100%;          /* same width for equal alignment */
+    text-align: center;   /* center text */
+    color: white;
+    font-family: "Mozilla Headline", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+.img_date{
+    background-image:url("grap_date.png");
+    background-size: cover;         /* fit image */
+    background-position: center;    /* center image */
+    background-repeat: no-repeat;   /* no repeat */
+    width: 100%;                    /* full width of grid cell */
+    height: 100%; 
+}
+
+.box10{
+    grid-column:2/6;
+    grid-row:6/9;
+    background-color:#231f20;
+    border-radius:0.5rem;
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+.box11{
+    grid-column:6/8;
+    grid-row:3/9;
+    background-color:#231f20;
+    border-radius:0.5rem;
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+.Full_state{
+     margin: 0;            /* remove spacing bias */
+    width: 100%;          /* same width for equal alignment */
+    text-align: center;   /* center text */
+    color: white;
+    font-family: "Mozilla Headline", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+.Daily{
+    margin: 0;            /* remove spacing bias */
+    width: 100%;          /* same width for equal alignment */
+    text-align: center;   /* center text */
+    color: white;
+    font-family: "Mozilla Headline", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+.img_dialy{
+    background-image:url("imageorder.jpg");
+    background-size: cover;         /* fit image */
+    background-position: center;    /* center image */
+    background-repeat: no-repeat;   /* no repeat */
+    width: 100%;                    /* full width of grid cell */
+    height: 120%;  
+}
+
+.img_order{
+   background-image:url("graph1.png");
+    background-size: cover;         /* fit image */
+    background-position: center;    /* center image */
+    background-repeat: no-repeat;   /* no repeat */
+    width: 100%;                    /* full width of grid cell */
+    height: 50%;   
+}
+.img-order1{
+   background-image:url("graph.png");
+    background-size: cover;         /* fit image */
+    background-position: center;    /* center image */
+    background-repeat: no-repeat;   /* no repeat */
+    width: 100%;                    /* full width of grid cell */
+    height: 50%;   
+}
+
+
+.box12 {
+    grid-column: 5/6;
+    grid-row: 3/6;
+    /* background-color: #231f20; */
+    border-radius: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;     /* vertical center */
+    align-items: center;         /* horizontal center */
+    gap: 1rem;
+    text-align: center;
+}
+
+.chartTitle {
+    margin: 0;
+    width: 100%;
+    color: white;
+    font-family: "Mozilla Headline", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.chartImage {
+    background-image: url("pie.png"); /* change your image name */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 80%;
+    border-radius: 0.5rem;
+}
+
+
+

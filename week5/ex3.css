@@ -1,0 +1,40 @@
+
+.container {
+    background-color: rgb(77, 75, 75);
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns: 1fr;   /* default mobile */
+    gap:10px;
+}
+
+.box {
+    margin:5px;
+    height:300px;
+    background-color: #EFBF04;
+    display:grid;
+    grid-template-rows: 70% 30%; /* 70% image + 30% text */
+}
+
+.image {
+    background-image: url("https://preview.redd.it/76ltj093z8x71.jpg?width=640&crop=smart&auto=webp&s=da1dfb7f485c643ac7cd6c591953e2d43b8787d2");
+    background-size: cover;
+    background-position: center;
+}
+
+p{
+    color: rgb(1, 1, 1);
+}
+/* Tablet */
+@media (min-width:601px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop */
+@media (min-width:1024px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
