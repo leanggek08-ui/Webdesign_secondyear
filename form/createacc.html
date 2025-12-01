@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="createacc.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">Create Account</div>
+        <main>
+            <div class="inputname">
+
+                <div class="firstname">
+                    <label for="firstname">First name*</label>
+                     <input type="text" id="firstname" name="firstname" placeholder="Enter your firstname" required>
+                </div>
+                <div class="lastname">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Enter your last name" required>
+                </div>
+            </div>
+
+            <div class="inputemail">
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="inputpassword">
+                <div class="password">
+                    <label for="pwd">Password*</label>
+                    <input type="password" id="pwd" name="pwd" placeholder="Enter your password" required>
+                </div>
+                <div class="confirmpassword">
+                    <label for="cmd">Confirm Password*</label>
+                    <input type="password" id="cmd" name="cmd" placeholder="Confirm your password" required>
+                </div>
+            </div>
+
+             <div class="inputgender">
+                <div class="gender">
+                    <span style="color: rgb(4, 83, 57);">Gender:</span><br>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="gender">
+                    <label for="female">female</label>
+                </div>
+                <div class="Hobbies">
+                    <span style="color: rgb(4, 83, 57);">Hobbies</span><br>
+                    <input type="checkbox" id="relax" name="relax" value="music">
+                    <label for="relax">Music</label>
+                    <input type="checkbox" id="study" name="study" value="reading">
+                    <label for="study">Reading</label>
+                    <input type="checkbox" id="wasted" name="wasted" value="Social Meida">
+                    <label for="wasted">Social Media</label>
+                    <input type="checkbox" id="sport" name="sport" value="football">
+                    <label for="sport">Football</label>
+
+                </div>
+             </div>
+
+             <div class="inputsource">
+                <div class="number">
+                    <label for="sincome">Source of Income</label>
+                    <input type="number" id="sincome" name="sincome">
+                </div>
+                <div class="range">
+                    <label for="income">Income</label>
+                    <input type="range" id="income" name="income">
+                </div>
+             </div>
+
+              <div class="inputprofile">
+                <div class="uplode">
+                    <label for="uplodeprofile">Uplode Profile Picture</label>
+                    <input type="file" id="uplodeprofile" name="uplodeprofile">
+                </div>
+                <div class="age">
+                    <label for="ages">Age</label>
+                    <input type="text" id="ages" name="age" placeholder="Enter your age" required>
+                </div>
+              </div>
+
+             <div class="inputBio">
+                <label for="Bio">Bio</label>
+                <textarea id="Bio" name="user_bio" rows="5" cols="40" placeholder="Enter your Bio here..." maxlength="500" ></textarea>
+             </div>
+        </main>
+        <div class="footer">
+             <input type="submit" value="Create" class="btn-submit">
+              
+        </div>
+    </div>
+</body>
+</html>

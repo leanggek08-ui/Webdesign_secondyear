@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+    <link rel="stylesheet" href="exercise1.css">
+</head>
+<body>
+    <div class="container">
+        <form action="#" method="post">
+            <h2>This survey is for person who single. <br>
+                The purpose is to know why you don't have a sweetheart.
+            </h2>
+
+            <!-- Name -->
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+            <!-- Email -->
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <!-- Age -->
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" min="1" max="120" placeholder="Your age" required>
+
+            <!-- Facebook link -->
+            <label for="facebook">Facebook Link</label>
+            <input type="url" id="facebook" name="link_facebook" placeholder="https://facebook.com/..." required>
+
+            <!-- Reason -->
+            <label for="reason">Why are you single?</label>
+            <input type="text" id="reason" name="reason" placeholder="Your reason" required>
+
+            <!-- Checkbox options -->
+            <p>Do you love me?</p>
+            <label><input type="checkbox" name="love_option" value="yes"> Yes, I do</label>
+            <label><input type="checkbox" name="love_option" value="no"> No, I don’t</label>
+
+            <!-- Submit -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+
+           
