@@ -1,0 +1,86 @@
+ :root{
+      --bg: #e9e9e9;
+      --block: #0b3a6b; /* dark blue */
+      --border: #ff8a00; /* orange border */
+      --gap: 14px;
+      --wrapper-pad: 20px;
+      --block-size: 64px; /* default size for blocks in row */
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: #f5f5f5;
+      color: #111;
+    }
+
+    /* Layout grid: 2x2 of wrappers */
+    .layout-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+      padding: 28px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .wrapper {
+      background: var(--bg);
+      border-radius: 6px;
+      border: 1px solid #ddd;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      padding: var(--wrapper-pad);
+    }
+
+    /* The blocks container (row) for the horizontal layouts */
+    .row {
+      display: flex;
+      flex-direction: row;
+      gap: var(--gap);
+    }
+
+    /* The blocks container (column) for the vertical layouts */
+    .col {
+      display: flex;
+      flex-direction: column;
+      gap: var(--gap);
+    }
+
+    .block {
+      width: var(--block-size);
+      height: var(--block-size);
+      background: var(--block);
+      border: 6px solid var(--border);
+      border-radius: 4px;
+      /* subtle shadow for depth (optional) */
+      box-shadow: 0 2px 0 rgba(0,0,0,.08);
+    }
+
+    /* Label to identify each layout (optional) */
+    .wrapper::after{
+      content: "";
+      position: absolute;
+      bottom: 8px;
+      right: 10px;
+      font-size: 12px;
+      color: #666;
+      /* leave empty; you can add text if desired */
+      /* For accessibility, you could announce layout type here with aria-labels instead */
+    }
+
+    /* Accessibility: reduce motion preference */
+    @media (prefers-reduced-motion: reduce) {
+      .block { transition: none; animation: none; }
+    }
+
+    /* Responsive niceties: shrink blocks on narrow viewports */
+    @media (max-width: 700px) {
+      :root { --block-size: 52px; }
+      .wrapper { height: 180px; }
+    }

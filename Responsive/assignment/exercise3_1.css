@@ -1,0 +1,59 @@
+/* Flex vertical container */
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;               /* similar to gap="middle" */
+    width: 300px;
+    margin: 40px;
+}
+
+/* Group styling */
+.input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+    padding: 8px 12px;
+    background: white;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group:hover {
+    border-color: #40a9ff;
+}
+
+.input-group:focus-within {
+    border-color: #40a9ff;
+    box-shadow: 0 0 3px rgba(64, 169, 255, 0.5);
+}
+
+/* Icon */
+.input-group i {
+    margin-right: 10px;
+    color: #888;
+}
+
+/* Input field */
+.input-group input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+}
+
+/* Sizes */
+.input-group.large {
+    padding: 14px 16px;
+}
+
+.input-group.large input {
+    font-size: 18px;
+}
+
+.input-group.small {
+    padding: 5px 10px;
+}
+
+.input-group.small input {
+    font-size: 14px;
+}

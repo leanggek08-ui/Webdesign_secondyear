@@ -1,0 +1,56 @@
+.container{
+    background-color: rgb(75, 71, 71);
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    height:10vh;
+}
+
+.logo{
+    background-image:url("logol.png");
+    background-size:cover;
+    background-position:center;
+    width:50%;
+    height:100px;
+}
+
+.navbar{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    color: aliceblue;
+    justify-content:center;
+    justify-items: center;
+    align-items:center;
+}
+
+.icon {
+    display: none;  /* hide on big screens */
+}
+
+.icon svg {
+    width: 35px;
+    height: 35px;
+    stroke: white; /* visible color */
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar div:not(.icon) {
+        display: none;
+    }
+
+    .icon {
+        display: block;
+        justify-self: end;
+        cursor: pointer;
+    }
+    .logo{
+        background-image:url("logol.png");
+        background-size:cover;
+        background-position:center;
+        width:30%;
+        height:70px;
+    }
+}

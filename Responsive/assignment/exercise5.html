@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Four Layouts (Row & Column)</title>
+  <link rel="stylesheet" href="exercise5.css">
+  
+</head>
+<body>
+
+  <main class="layout-grid" aria-label="Four demo layouts">
+    <!-- Layout 1: 3 horizontal blocks in a row -->
+    <section class="wrapper" aria-label="Layout 1: horizontal row of 3 blocks">
+      <div class="row" role="group" aria-label="Row of 3 blocks">
+        <div class="block" aria-label="Block 1"></div>
+        <div class="block" aria-label="Block 2"></div>
+        <div class="block" aria-label="Block 3"></div>
+      </div>
+    </section>
+
+    <!-- Layout 2: 3 vertical blocks in a column -->
+    <section class="wrapper" aria-label="Layout 2: vertical column of 3 blocks">
+      <div class="col" role="group" aria-label="Column of 3 blocks" style="height:100%">
+        <div class="block" aria-label="Block 1"></div>
+        <div class="block" aria-label="Block 2"></div>
+        <div class="block" aria-label="Block 3"></div>
+      </div>
+    </section>
+
+    <!-- Layout 3: same as Layout 1 (to mirror the image) -->
+    <section class="wrapper" aria-label="Layout 3: horizontal row of 3 blocks">
+      <div class="row" role="group" aria-label="Row of 3 blocks">
+        <div class="block" aria-label="Block 1"></div>
+        <div class="block" aria-label="Block 2"></div>
+        <div class="block" aria-label="Block 3"></div>
+      </div>
+    </section>
+
+    <!-- Layout 4: same as Layout 2 (vertical column) -->
+    <section class="wrapper" aria-label="Layout 4: vertical column of 3 blocks">
+      <div class="col" role="group" aria-label="Column of 3 blocks" style="height:100%">
+        <div class="block" aria-label="Block 1"></div>
+        <div class="block" aria-label="Block 2"></div>
+        <div class="block" aria-label="Block 3"></div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

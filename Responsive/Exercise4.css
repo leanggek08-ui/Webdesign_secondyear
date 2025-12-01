@@ -1,0 +1,36 @@
+.container{
+    background-color:rgb(0, 0, 0);
+}
+
+.big, .small {
+    color: black; /* default text and icon color */
+    padding: 20px;
+    font-size: 30px;
+}
+
+.big svg, .small svg {
+    width: 40px;
+    height: 40px;
+}
+
+/* screen >= 800px */
+@media (min-width:800px){
+    .big{
+        background-color: greenyellow;
+        color: black;
+    }
+    .big svg{
+        stroke: black;   /* change SVG color */
+    }
+}
+
+/* screen <= 799px */
+@media (max-width:799px){
+    .small{
+        background-color: red;
+        color: white;
+    }
+    .small svg{
+        stroke: white;
+    }
+}

@@ -1,0 +1,21 @@
+.btn-group {
+            display: flex;          /* Horizontal group */
+            flex-direction: column;
+            overflow: hidden;
+            border-radius: 5px;     /* Rounded outer corners */
+        }
+
+        .btn-group button {
+            padding: 10px 25px;
+            background-color: #007bff;
+            color: white;
+            border: none;           /* Remove space */
+            margin: 0;              /* Ensure zero gap */
+            cursor: pointer;
+        }
+
+        .btn-group button:hover {
+            background-color: #0056b3;
+        }
+
+

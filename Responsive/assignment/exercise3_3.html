@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compact Inputs Example</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="space-vertical">
+
+    <!-- Single input -->
+    <div class="space-compact">
+        <input type="text" value="26888888">
+    </div>
+
+    <!-- Input with area code and number -->
+    <div class="space-compact">
+        <input type="text" value="0571" class="width-20">
+        <input type="text" value="26888888" class="width-80">
+    </div>
+
+    <!-- Input with addon -->
+    <div class="space-compact">
+        <span class="addon">https://</span>
+        <input type="text" placeholder="input search text">
+        <button class="clear-btn">x</button>
+    </div>
+
+    <!-- Input with button -->
+    <div class="space-compact width-100">
+        <input type="text" value="Combine input and button">
+        <button class="btn-primary">Submit</button>
+    </div>
+
+    <!-- Select + Input -->
+    <div class="space-compact">
+        <select>
+            <option value="zhejiang" selected>Zhejiang</option>
+            <option value="jiangsu">Jiangsu</option>
+        </select>
+        <input type="text" value="Xihu District, Hangzhou">
+    </div>
+
+    <!-- Large input with icon -->
+    <div class="space-compact large">
+        <span class="addon"><i class="fa-solid fa-magnifying-glass"></i></span>
+        <input type="text" placeholder="large size">
+        <input type="text" placeholder="another input">
+    </div>
+
+</div>
+
+</body>
+</html>

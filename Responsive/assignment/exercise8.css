@@ -1,0 +1,74 @@
+ :root{
+      --banner-height: 72px;
+      --banner-color: #d07a7a;   /* banner color (reddish) */
+      --tile: #7bd166;            /* tile color (green) */
+      --gap: 20px;                 /* space between tiles */
+      --tile-size: 120px;          /* square tile size (width/height) */
+    }
+
+    * { box-sizing: border-box; }
+
+    body{
+      margin:0;
+      font-family: Arial, sans-serif;
+      background:#f5f5f5;
+    }
+
+    /* Frame to resemble a UI card around content (optional) */
+    .frame{
+      width: min(1100px, 92vw);
+      margin: 20px auto;
+      padding: 0;
+      border: 6px solid #222;
+      background:#fff;
+      border-radius: 6px;
+      overflow:hidden;
+      box-shadow: 0 2px 12px rgba(0,0,0,.25);
+    }
+
+    /* Top banner */
+    .banner{
+      height:var(--banner-height);
+      background:var(--banner-color);
+      color:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:600;
+      letter-spacing:.4px;
+      text-align:center;
+    }
+
+    /* Horizontal scroll container for tiles */
+    .scroll {
+      overflow-x:auto;
+      overflow-y:hidden;
+      white-space:nowrap;
+      padding: 20px;
+    }
+
+    /* Tiles row (inline-block to align horizontally) */
+    .tile {
+      display:inline-block;
+      width: var(--tile-size);
+      height: var(--tile-size);
+      margin-right: var(--gap);
+      background: var(--tile);
+      border-radius:6px;
+      vertical-align: top;
+    }
+
+    /* Optional: hide scrollbar aesthetics a bit on WebKit */
+    .scroll::-webkit-scrollbar{
+      height:12px;
+    }
+    .scroll::-webkit-scrollbar-thumb{
+      background:#ccc;
+      border-radius:6px;
+    }
+
+    /* Responsive tweak: on narrow screens, reduce tile size */
+    @media (max-width: 720px){
+      :root{ --tile-size: 90px; --gap:12px; }
+      .frame{ width: 92vw; }
+    }

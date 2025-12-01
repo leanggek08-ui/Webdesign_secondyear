@@ -1,0 +1,137 @@
+:root{
+  --green-900:#1f5e2a;
+  --green-700:#2e8b3e;
+  --green-500:#4caf50;
+  --green-300:#8bc34a;
+  --bg:#e9f5e9;
+  --panel:#d9f0d3;
+  --text:#0b2a0b;
+  --shadow: 0 1px 0 rgba(0,0,0,.04);
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  background: #111; /* dark gutter between panels in the image */
+}
+
+.page {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  min-height: 100dvh;
+  gap: 0;
+  padding: 0;
+  background: #1a4a22; /* outer frame color similar to screenshot edge */
+}
+
+/* Global green strips */
+.site-header,
+.site-nav,
+.site-footer,
+.article-header,
+.article-body,
+.aside-block,
+.section-block {
+  background: var(--green-700);
+  color: white;
+  border-radius: 0;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid rgba(255,255,255,.15);
+  box-shadow: var(--shadow);
+}
+
+/* Layout region wrappers */
+.content {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  grid-template-columns: 1fr;
+}
+.article {
+  background: var(--green-500);
+  padding: 0;
+  display: grid;
+  grid-template-rows: auto auto;
+}
+.article-header {
+  background: rgba(255,255,255,.2);
+  color: #0b2a0b;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid rgba(0,0,0,.1);
+}
+.article-body {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.6rem;
+  padding: 0.8rem;
+}
+.main-content {
+  background: #eaffea;
+  color: #0b2a0b;
+  border: 1px solid rgba(0,0,0,.08);
+  padding: 1rem;
+  height: 10rem;
+}
+
+.sidebar {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.6rem;
+}
+.aside-block {
+  background: #9bd389;
+  color: #0b2a0b;
+  padding: 0.75rem;
+  border: 1px solid rgba(0,0,0,.08);
+}
+.aside-block.large {
+  grid-column: span 2;
+  height: 8rem;
+  align-self: stretch;
+}
+
+.section-block {
+  height: 6rem;
+  background: #88c45b;
+  color: #0b2a0b;
+  padding: 0.75rem;
+}
+
+.site-header,
+.site-nav,
+.site-footer { 
+  background: #2b8f2d; 
+  color: white; 
+  padding: 0.9rem 1rem; 
+  border-bottom: 3px solid rgba(0,0,0,.08);
+}
+.site-header { font-weight: 700; }
+
+.site-footer { margin-top: auto; }
+
+/* Breakpoints to mimic the three-panel evolution */
+@media (min-width: 700px) {
+  .content {
+    grid-template-columns: 2fr 1fr;
+  }
+  .article { order: 1; }
+  .sidebar { order: 2; }
+}
+@media (min-width: 1024px) {
+  .content {
+    grid-template-columns: 2fr 1.2fr 1.2fr;
+  }
+  .sidebar {
+    grid-auto-rows: minmax(0, auto);
+  }
+  .aside-block {
+    height: auto;
+  }
+  .aside-block.large {
+    height: auto;
+    grid-column: auto;
+  }
+}

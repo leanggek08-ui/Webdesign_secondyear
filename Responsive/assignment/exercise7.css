@@ -1,0 +1,74 @@
+:root{
+      --banner-height: 80px;
+      --banner-bg: #d56960;     /* reddish banner color */
+      --card: #8bd178;            /* green tile color */
+      --gap: 20px;                 /* space between tiles */
+      --cols: 4;                   /* number of columns in the grid */
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #f5f5f5;
+      font-family: Arial, sans-serif;
+    }
+
+    /* A fixed-width page container to resemble screenshot frame */
+    .frame {
+      width: min(1000px, 92vw);
+      margin: 20px auto;
+      padding: 0;
+      border: 6px solid #111;
+      box-shadow: 0 4px 12px rgba(0,0,0,.15);
+      background:#fff;
+    }
+
+    /* Top banner bar with centered text */
+    .banner {
+      height: var(--banner-height);
+      background: var(--banner-bg);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      letter-spacing: .5px;
+      text-transform: none;
+    }
+
+    /* Grid container for tiles */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(var(--cols), 1fr);
+      gap: var(--gap);
+      padding: 28px;
+    }
+
+    /* Individual tile cards (green squares) */
+    .tile {
+      background: var(--card);
+      width: 100%;
+      aspect-ratio: 1 / 1; /* ensures square tiles */
+      border-radius: 4px;
+      /* Optional subtle shadow for depth (uncomment if desired)
+      box-shadow: 0 2px 6px rgba(0,0,0,.08);
+      */
+    }
+
+    /* Make it look similar on tall screens with vertical scrolling */
+    .scroll-area {
+      max-height: 70vh;
+      overflow-y: auto;
+    }
+
+    /* Accessibility: focus outline for keyboard users */
+    .tile:focus-visible {
+      outline: 3px solid #2144f3;
+      outline-offset: 2px;
+    }
+
+    @media (max-width: 700px){
+      :root { --cols: 2; }
+      .frame { width: 92vw; }
+    }

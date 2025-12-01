@@ -1,0 +1,85 @@
+ :root{
+      --wrapper-size: 200px;
+      --orange: #ff7a00;
+      --gray: #e0e0e0;
+    }
+
+    *{box-sizing:border-box;}
+
+    body{
+      margin:0;
+      min-height:100vh;
+      background:#fff;
+      font-family: Arial, sans-serif;
+      display:flex;
+      align-items:flex-start;
+      justify-content:flex-start;
+    }
+
+    /* Shared wrapper style */
+    .wrapper{
+      position:relative;
+      width:var(--wrapper-size);
+      height:var(--wrapper-size);
+      background:var(--gray);
+      border-radius:0;
+      /* subtle label positioning to mimic screenshot text (not required) */
+    }
+
+    /* The orange square that overlaps the wrapper */
+    .orb{
+      position:absolute;
+      width:110px;
+      height:110px;
+      background:var(--orange);
+      top:40px;        /* adjust for vertical overlap */
+      left:-40px;      /* adjust for horizontal overlap (over the left edge) */
+      z-index:2;
+    }
+
+    /* Layout container for two groups (left and right) */
+    .stage{
+      position:relative;
+      width:100%;
+      height:100vh;
+      padding:40px;
+    }
+
+    .group{
+      position:relative;
+      width:0;
+      height:0;
+    }
+
+    /* Left group: wrapper offset upwards-left */
+    .left{
+      position:absolute;
+      left:40px;
+      top:40px;
+    }
+
+    /* Right group: wrapper offset down-right (to resemble screenshot) */
+    .right{
+      position:absolute;
+      left:360px;      /* space between groups; adjust as needed */
+      top:180px;
+    }
+
+    /* Adjust individual orange boxes per group to mimic screenshot variations */
+    .orb.left{ top:40px; left:-40px; }
+    .orb.right{ top:140px; left: -40px; }
+
+    /* Optional: add small label text (not required) */
+    .wrapper-label{
+      position:absolute;
+      font-size:12px;
+      color:#555;
+      top:-16px;
+      left:0;
+      transform:translateX(0);
+    }
+
+    /* Accessibility tweaks for visibility on small screens */
+    @media (max-width: 700px){
+      .right{ left: 0; top: 320px; }
+    }
