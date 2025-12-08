@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NAV-BAR with Tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Top header bar -->
+  <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-14 md:h-16">
+        <!-- Brand -->
+        <div class="flex-shrink-0">
+          <span class="font-bold tracking-wide text-xl md:text-2xl">NAV-BAR</span>
+        </div>
+
+        <!-- Desktop nav -->
+        <nav class="hidden md:flex space-x-8">
+          <a href="#" class="text-sm md:text-base hover:underline">Home</a>
+          <a href="#" class="text-sm md:text-base hover:underline">About</a>
+          <a href="#" class="text-sm md:text-base hover:underline">Projects</a>
+          <a href="#" class="text-sm md:text-base hover:underline">Contact</a>
+        </nav>
+
+        <!-- Right icons (optional social icons placeholders) -->
+        <div class="hidden md:flex items-center space-x-3 text-blue-600">
+          <span class="sr-only">Socials</span>
+          <!-- Replace with real icons as needed -->
+          <span>f</span><span>t</span><span>in</span>
+        </div>
+
+        <!-- Mobile menu button -->
+        <button id="menuBtn" class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:bg-gray-100 focus:outline-none" aria-label="Open menu">
+          <!-- Hamburger icon -->
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu (collapsible) -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-gray-200 bg-white">
+      <nav class="px-4 py-2 space-y-1">
+        <a href="#" class="block px-2 py-2 text-sm hover:bg-gray-50 rounded">Home</a>
+        <a href="#" class="block px-2 py-2 text-sm hover:bg-gray-50 rounded">About</a>
+        <a href="#" class="block px-2 py-2 text-sm hover:bg-gray-50 rounded">Projects</a>
+        <a href="#" class="block px-2 py-2 text-sm hover:bg-gray-50 rounded">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page content -->
+  <main class="pt-20 md:pt-24 pb-12">
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-white/90 border border-gray-200 rounded-md h-[60vh] md:h-[65vh] shadow-sm">
+      <!-- Large empty content area to resemble screenshot -->
+      <div class="h-full w-full bg-gray-100 rounded-md"></div>
+    </section>
+  </main>
+
+  <script>
+    // Simple toggle for mobile menu
+    const btn = document.getElementById('menuBtn');
+    const panel = document.getElementById('mobileMenu');
+    btn?.addEventListener('click', () => {
+      panel.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

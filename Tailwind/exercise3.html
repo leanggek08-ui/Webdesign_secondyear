@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Menu</title>
+  <!-- Tailwind CSS CDN (for quick prototyping) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    /* Optional: custom font style to mimic the screenshot feel */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+    .font-mont {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+
+</head>
+<body class="bg-slate-100 min-h-screen flex items-center justify-center p-6">
+  <main class="max-w-4xl w-full bg-white/60 backdrop-blur-md border-2 border-black/10 rounded-2xl shadow-md p-6 md:p-8">
+    <!-- Title -->
+    <header class="text-center mb-6">
+      <h1 class="text-3xl md:text-4xl font-bold tracking-wide font-mont text-slate-800">
+        Our <span class="text-indigo-600">Menu</span>
+      </h1>
+      <!-- Chips -->
+      <nav class="mt-4 flex flex-wrap justify-center gap-2">
+        <span class="px-3 py-1 rounded-full border border-slate-300 text-sm bg-white shadow-sm cursor-default">All</span>
+        <span class="px-3 py-1 rounded-full border border-slate-300 text-sm bg-white shadow-sm">Breakfast</span>
+        <span class="px-3 py-1 rounded-full border border-slate-300 text-sm bg-white shadow-sm">Lunch</span>
+        <span class="px-3 py-1 rounded-full border border-slate-300 text-sm bg-white shadow-sm">Shakes</span>
+        <span class="px-3 py-1 rounded-full border border-slate-300 text-sm bg-white shadow-sm">Dinner</span>
+      </nav>
+    </header>
+
+    <!-- Menu List -->
+    <section class="space-y-6">
+      <!-- Item 1 -->
+      <article class="flex items-start gap-4">
+        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=300&auto=format&fit=crop" alt="Buttermilk Pancakes" class="w-28 h-20 object-cover rounded-lg border border-slate-300" />
+        <div class="flex-1">
+          <div class="flex items-center justify-between">
+            <h3 class="text-lg font-semibold uppercase tracking-wide text-slate-800">Buttermilk Pancakes</h3>
+            <span class="text-sm font-semibold text-amber-500">$15.99</span>
+          </div>
+          <p class="text-sm text-slate-600 mt-1">
+            I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed
+          </p>
+        </div>
+      </article>
+
+      <!-- Item 2 -->
+      <article class="flex items-start gap-4">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=300&auto=format&fit=crop" alt="Diner Double" class="w-28 h-20 object-cover rounded-lg border border-slate-300" />
+        <div class="flex-1">
+          <div class="flex items-center justify-between">
+            <h3 class="text-lg font-semibold uppercase tracking-wide text-slate-800">Diner Double</h3>
+            <span class="text-sm font-semibold text-amber-500">$13.99</span>
+          </div>
+          <p class="text-sm text-slate-600 mt-1">
+            vaporwave iPhone mumblecore selvage raw denim slow-carb leggings gochujang hella stocking
+          </p>
+        </div>
+      </article>
+
+      <!-- Item 3 -->
+      <article class="flex items-start gap-4">
+        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=300&auto=format&fit=crop" alt="Godzilla Milkshake" class="w-28 h-20 object-cover rounded-lg border border-slate-300" />
+        <div class="flex-1">
+          <div class="flex items-center justify-between">
+            <h3 class="text-lg font-semibold uppercase tracking-wide text-slate-800">Godzilla Milkshake</h3>
+            <span class="text-sm font-semibold text-amber-500">$6.99</span>
+          </div>
+          <p class="text-sm text-slate-600 mt-1">
+            omanbuca chillwave fanny pack 3 Wolf Moon street art photo booth before they sold out organic viral
+          </p>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

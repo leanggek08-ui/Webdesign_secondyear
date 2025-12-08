@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Tab</title>
+</head>
+<body class="bg-gray-100">
+    <div class="bg-gray-200 w-full max-w-md md:max-w-xl lg:max-w-2xl xl:max-w-3xl 
+                h-auto  mt-6 mx-auto rounded-lg shadow-lg p-3 flex flex-col ">
+        <!-- this one for About -->
+        <div class="h-28 flex flex-col mt-6 ml-2 ">
+            <div class="text-blue-800  justify-center text-center text-xl">About</div>
+            <div class="text-blue-800 justify-start text-sm ml-3">Lorem ispum dolor sit smet consecteture adipisicing </div>
+        </div>
+
+        <!-- this one for image -->
+        <div class=" h-48 md:h-56 lg:h-64 w-full mt-4 overflow-hidden rounded-md flex justify-center">
+            <img src="https://i.pinimg.com/736x/9d/6b/af/9d6baf6d9fbc4aa810f9f78b8f42616a.jpg" class="w-full h-full object-cover">
+        </div>
+
+       <div class="bg-gray-200 h-52 flex flex-col">
+            <div class=" h-14 flex flex-row justify-around">
+                <button onclick="showTab('history')" class="px-4 py-2 bg-gray-400 text-white rounded mt-2 mb-2">History</button>
+                <button onclick="showTab('vision')" class="px-4 py-2 bg-gray-400 text-white rounded mt-2 mb-2">Vision</button>
+                <button onclick="showTab('goals')" class="px-4 py-2 bg-gray-400 text-white rounded mt-2 mb-2">Goals</button>
+            </div>
+
+            <!-- Content box -->
+            <div id="contentBox" class=" bg-gray-400 h-40 p-4 text-white text-sm overflow-auto">
+                <!-- Default content -->
+                <p>Click a button above to see the content.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function showTab(tab) {
+            let content = "";
+
+            if (tab === "history") {
+                content = "History: Our organization was founded many years ago with the purpose of helping people grow and learn.";
+            } 
+            else if (tab === "vision") {
+                content = "Vision: Our vision is to create a world where everyone has equal access to knowledge and opportunity.";
+            } 
+            else if (tab === "goals") {
+                content = "Goals: We aim to support communities, promote technology education, and build a better future.";
+            }
+
+            document.getElementById("contentBox").innerHTML = "<p>" + content + "</p>";
+        }
+    </script>
+    
+</body>
+</html>
